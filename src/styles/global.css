@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, * {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  body {
+    background: FFF;
+    overflow-x: hidden;
+  }
+  
+  @media screen and (min-width: 640px) { 
+    .clippedRect {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .CTAclippedRect {
+      -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
