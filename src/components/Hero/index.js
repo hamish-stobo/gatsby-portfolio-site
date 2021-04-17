@@ -6,7 +6,7 @@ const Hero = () => {
     const msgs = ['front-end', 'back-end', 'full-stack']
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
-            <div className="text-lg sm:text-xl heroText">
+            <div className="text-lg sm:text-2xl heroText">
                 <p>Hi, I’m<span className="text-blue-500"> Hamish.</span></p>
                 <p>I’m a <TypeWriter messages={msgs} /> web developer.</p>
             </div>
