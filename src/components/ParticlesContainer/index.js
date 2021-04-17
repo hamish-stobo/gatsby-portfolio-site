@@ -7,11 +7,12 @@ const ParticlesContainer = () => {
         <Particles
         className="absolute top-0 z-0"
         height="100vh"
+        width="100vw"
         id="tsparticles"
         options={{
           background: {
             color: {
-              value: "#fff",
+              value: "#374151",
             },
           },
           fpsLimit: 60,
@@ -46,10 +47,10 @@ const ParticlesContainer = () => {
           },
           particles: {
             color: {
-              value: "#1E40AF",
+              value: "#fff",
             },
             links: {
-              color: "#1E40AF",
+              color: "#60A5FA",
               distance: 150,
               enable: true,
               opacity: 0.5,

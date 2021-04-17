@@ -13,12 +13,12 @@
 }
 
 #cursor {
-  border-left: .1em solid black;
-  animation: blink .7s steps(1) infinite;
+  border-left: .1em solid rgba(0,0,0,0);
+  animation: blink .7s steps(1) 12;
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent;
+    border-color: white;
   }
 }

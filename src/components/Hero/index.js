@@ -6,11 +6,11 @@ const Hero = () => {
     const msgs = ['front-end', 'back-end', 'full-stack']
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
-            <div className="text-lg sm:text-2xl heroText">
-                <p>Hi, I’m<span className="text-blue-500"> Hamish.</span></p>
+            <div className="text-lg text-white sm:text-2xl heroText">
+                <p>Hello there! I’m<span className="font-semibold"> Hamish.</span></p>
                 <p>I’m a <TypeWriter messages={msgs} /> web developer.</p>
             </div>
-            <a className="text-blue-400 text-xl py-3 px-7 border-solid border-4 border-blue-400 cursor-pointer whiteToBlueBtn">Find out more</a>
+            <a className="text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer CTAbtn">Find out more</a>
         </section>
     )
 }
