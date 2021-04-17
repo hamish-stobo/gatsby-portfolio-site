@@ -5,12 +5,12 @@ import TypeWriter from './TypeWriter'
 const Hero = () => {
     const msgs = ['front-end', 'back-end', 'full-stack']
     return (
-        <section className="text-lg h-screen flex flex-col justify-evenly items-center heroSection">
-            <div>
+        <section className="h-screen flex flex-col justify-evenly items-center">
+            <div className="text-lg sm:text-xl heroText">
                 <p>Hi, I’m<span className="text-blue-500"> Hamish.</span></p>
                 <p>I’m a <TypeWriter messages={msgs} /> web developer.</p>
             </div>
-            <button>Find out more</button>
+            <a className="text-blue-400 text-xl py-3 px-7 border-solid border-4 border-blue-400 cursor-pointer whiteToBlueBtn">Find out more</a>
         </section>
     )
 }

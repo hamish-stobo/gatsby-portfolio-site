@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="text-3xl pt-8 h-24">
                 Project Showcase
             </div>
-            <div className="sm:pt-4">
+            <div className="sm:pt-4 pb-8 md:pb-16">
                 {
                 projectsData.map(( project, idx ) => {
                     const key = idx + project.id

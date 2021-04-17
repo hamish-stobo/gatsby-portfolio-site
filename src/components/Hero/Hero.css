@@ -1,9 +1,15 @@
-.heroSection * {
+.heroText * {
   font-family: 'Roboto Mono', monospace;
 }
 
 .typewriterText {
   width: 100px;
+}
+
+@media screen and (min-width: 640px) {
+  .typewriterText {
+    width: 110px;
+  }
 }
 
 #cursor {

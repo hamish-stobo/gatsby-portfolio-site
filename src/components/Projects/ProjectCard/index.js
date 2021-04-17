@@ -14,9 +14,9 @@ const ProjectCard = (props) => {
             <div className={`md:px-4 flex flex-col justify-evenly items-center md:items-start ${flexDirection}`}>
                 <div className={`flex flex-col justify-evenly items-center w-11/12 md:w-3/6 md:justify-between md:h-full ${marginDirectionImage}`}>
                     <img className="lg:max-w-lg shadow-lg" src={img} alt="Screenshot of the app"></img>
-                    <div className="flex flex-row justify-evenly items-center w-full pt-8">
-                        <a className="text-blue-500 py-3 px-7 border-solid border-4 border-blue-400 text-xl" href={url} target="_blank" rel="noreferrer">See Live</a>
-                        <a className="text-blue-500 text-xl" href={repo} target="_blank" rel="noreferrer">Source Code</a>
+                    <div className="flex flex-row justify-evenly items-center w-full pt-8 text-lg sm:text-xl">
+                        <a className="text-blue-500 py-2 px-6 sm:py-3 sm:px-7 border-solid border-4 border-blue-400 whiteToBlueBtn" href={url} target="_blank" rel="noreferrer">See Live</a>
+                        <a className="text-blue-500" href={repo} target="_blank" rel="noreferrer">Source Code</a>
                     </div>
                 </div>
                 <div className={`w-11/12 md:w-3/6 pt-8 md:pt-0 md:px-8 ${marginDirectionText}`}>
