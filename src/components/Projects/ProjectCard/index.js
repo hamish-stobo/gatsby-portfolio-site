@@ -13,11 +13,11 @@ const ProjectCard = (props) => {
     const marginDirectionText = idx % 2 === 0 ? 'lg:ml-4' : 'lg:mr-4'
     return (
         <div className="mt-4 lg:mt-12 md:max-w-screen-md lg:max-w-screen-lg mx-auto">
-            <Fade top duration={1000} delay={200} distance="10px">
+            <Fade top duration={800} delay={100} distance="10px">
                 <h2 className="text-2xl py-8 lg:py-12">{title}</h2>
             </Fade>
             <div className={`md:px-4 flex flex-col justify-evenly items-center md:items-start ${flexDirection}`}>
-            <Fade left={isEven} right={isOdd} duration={1000} delay={350} distance="30px">
+            <Fade left={isEven} right={isOdd} duration={800} delay={250} distance="30px">
                 <div className={`flex flex-col justify-evenly items-center w-11/12 md:w-3/6 md:justify-between md:h-full ${marginDirectionImage}`}>
                     <img className="lg:max-w-lg shadow-lg" src={img} alt="Screenshot of the app"></img>
                     <div className="flex flex-row justify-evenly items-center w-full pt-8 text-lg sm:text-xl">
@@ -27,10 +27,10 @@ const ProjectCard = (props) => {
                 </div>
             </Fade>
             <div className={`w-11/12 md:w-3/6 pt-8 md:pt-0 md:px-8 ${marginDirectionText}`}>
-                    <Fade right={isEven} left={isOdd} duration={1000} delay={420} distance="30px">
+                    <Fade right={isEven} left={isOdd} duration={800} delay={300} distance="30px">
                         <p className={`py-4 sm:px-8 md:p-0 lg:pt-4 ${textDirection}`}>{info}</p>
                     </Fade>
-                    <Fade right={isEven} left={isOdd} duration={1000} delay={420} distance="30px">
+                    <Fade right={isEven} left={isOdd} duration={800} delay={320} distance="30px">
                         <p className={`py-4 sm:px-8 md:p-0 md:pt-4 ${textDirection}`}>{info2}</p>
                     </Fade>
                 </div>

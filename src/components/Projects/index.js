@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade'
 const Projects = () => {
     return (
         <section>
-            <Fade top duration={1000} delay={200} distance="10px">
+            <Fade top duration={800} delay={150} distance="10px">
                 <div className="text-3xl pt-8 h-24">
                     Project Showcase
                 </div>
