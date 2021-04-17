@@ -1,13 +1,16 @@
 import React from 'react'
 import projectsData from './projectsData'
 import ProjectCard from './ProjectCard'
+import Fade from 'react-reveal/Fade'
 
 const Projects = () => {
     return (
         <section>
-            <div className="text-3xl pt-8 h-24">
-                Project Showcase
-            </div>
+            <Fade top duration={1000} delay={200} distance="10px">
+                <div className="text-3xl pt-8 h-24">
+                    Project Showcase
+                </div>
+            </Fade>
             <div className="sm:pt-4 pb-8 md:pb-16">
                 {
                 projectsData.map(( project, idx ) => {
