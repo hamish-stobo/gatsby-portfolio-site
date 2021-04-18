@@ -38,7 +38,7 @@ html, body, * {
   .whiteToBlueBtn {
     transition: ease-out 0.3s;
   }
-  .whiteToBlueBtn:hover {
+  .whiteToBlueBtn:hover span {
     box-shadow: inset 187.4px 0 0 0 #60A5FA;
     color: #fff;
   }
