@@ -1,4 +1,8 @@
-Personal portfolio website built using Gatsby.
+This is my personal portfolio website built using Gatsby as the module bundler for React, and Tailwind CSS.
+
+I chose Gatsby as it makes websites load quickly. It also includes image optimization and lazy-loading, keeping asset files small.
+
+I chose Tailwind as the CSS framework as it is simple, intuitive, easily customizable, and tree-shakes un-used classes for production builds.
 
 ## 🚀 Quick start
 
