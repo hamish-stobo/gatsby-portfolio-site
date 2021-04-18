@@ -1,4 +1,4 @@
-Personal portfolio website build from gatsby.
+Personal portfolio website built from gatsby.
 
 ## 🚀 Quick start
 
