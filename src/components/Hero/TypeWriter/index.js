@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 const TypeWriter = ({ messages }) => {
   const CONSTANTS = {
-    DELETING_SPEED: 50,
-    TYPING_SPEED: 350,
+    DELETING_SPEED: 40,
+    TYPING_SPEED: 200,
   }
   const [state, setState] = useState({
     text: "",

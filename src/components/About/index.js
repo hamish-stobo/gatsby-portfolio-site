@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section id="about" className="bg-blue-400 pt-20 pb-32 sm:pb-40 clippedRect mx-auto text-center min-h-full">
             <Fade bottom duration={800} delay={100} distance="10px">
-                <div className="p-8 sm:py-12 rounded-sm bg-white shadow-lg max-w-md lg:max-w-lg sm:max-w-screen-sm mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center">
+                <div className="p-8 sm:py-12 rounded-sm bg-white shadow-lg max-w-md sm:max-w-screen-md mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center">
                     <Fade left duration={800} delay={200} distance="30px">
                         <StaticImage src='../../images/profile.jpg' alt="Website author" placeholder="blurred" layout="fullWidth" className="w-60 shadow-md sm:mr-4"/>
                     </Fade>
