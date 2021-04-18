@@ -22,7 +22,9 @@ const ProjectCard = (props) => {
                 <div className={`flex flex-col justify-evenly items-center w-11/12 md:w-3/6 md:justify-between md:h-full ${marginDirectionImage}`}>
                     <ProjectImg  filename={img} />
                     <div className="flex flex-row justify-evenly items-center w-full pt-8 text-lg sm:text-xl">
-                        <a className="text-blue-500 border-solid border-4 border-blue-400 whiteToBlueBtn" href={url} target="_blank" rel="noreferrer"><span className="inline-block w-full h-full py-2 px-6 sm:py-3 sm:px-7 ">See Live</span></a>
+                        <a className="border-solid border-4 border-blue-400 whiteToBlueBtn" href={url} target="_blank" rel="noreferrer">
+                            <span className="text-blue-500 inline-block w-full h-full py-2 px-6 sm:py-3 sm:px-7 ">See Live</span>
+                        </a>
                         <a className="text-blue-500" href={repo} target="_blank" rel="noreferrer">Source Code</a>
                     </div>
                 </div>

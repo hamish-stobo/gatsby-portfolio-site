@@ -19,10 +19,6 @@ const ProjectImg = ({ filename }) => (
       }
     }
     `}
-    
-    // fluid(maxWidth: 2000) {
-    //   ...GatsbyImageSharpFluid
-    // }
     render={(data) => {
       const image = data.images.edges.find((n) => n.node.relativePath.includes(filename))
 

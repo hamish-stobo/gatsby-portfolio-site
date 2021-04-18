@@ -1,5 +1,4 @@
 import React from 'react'
-import './CTA.css'
 import Fade from 'react-reveal/Fade'
 
 const CTA = () => {

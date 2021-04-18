@@ -63,7 +63,7 @@ const TypeWriter = ({ messages }) => {
 
   return (
     <div className="typewriterText inline-block">
-        <span >{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span>
+        <span className="inline-block">{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span>
         <span id="cursor" />
     </div>
   )

@@ -29,23 +29,48 @@ html, body, * {
       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }
   }
-  
+
+.CTAbtn {
+    box-shadow: inset 0 0 0 0 #fff;
+}
+
 .whiteToBlueBtn span {
   box-shadow: inset 0 0 0 0 #60A5FA;
 }
 
 @media (hover: hover) {
-  .whiteToBlueBtn span {
-    transition: ease-out 0.3s;
-  }
-  .whiteToBlueBtn:hover span {
-    box-shadow: inset 187.4px 0 0 0 #60A5FA;
-    color: #fff;
-  }
+    .CTAbtn {
+      transition: ease-out 0.3s;
+    }
+
+    .whiteToBlueBtn span {
+      transition: ease-out 0.3s;
+    }
+    .CTAbtn:hover {
+        box-shadow: inset 187.4px 0 0 0 #fff;
+        color: #60A5FA;
+    }
+    
+    .whiteToBlueBtn:hover span {
+      box-shadow: inset 187.4px 0 0 0 #60A5FA;
+      color: #fff;
+    }
 }
 
 @media (hover: none) {
-  .whiteToBlueBtn:active {
+  .CTAbtn:visited {
+    box-shadow: inset 0 0 0 0 #fff;
+    color: #60A5FA;
+  }
+  .CTAbtn:active {
+    box-shadow: inset 187.4px 0 0 0 #fff;
+    color: #fff;
+  }
+  .whiteToBlueBtn:visited span {
+    box-shadow: inset 0 0 0 0 #60A5FA;
+    color: #3B82F6;
+  }
+  .whiteToBlueBtn:active span {
     box-shadow: inset 187.4px 0 0 0 #60A5FA;
     color: #fff;
   }
