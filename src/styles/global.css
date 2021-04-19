@@ -46,42 +46,37 @@ html, body, * {
     .whiteToBlueBtn span {
       transition: ease-out 0.3s;
     }
-    .CTAbtn:hover {
+    .CTAbtn:hover, .CTAbtn:focus {
         box-shadow: inset 187.4px 0 0 0 #fff;
         color: #60A5FA;
     }
     
-    .whiteToBlueBtn:hover span {
+    .whiteToBlueBtn:hover span, .whiteToBlueBtn:hover span {
       box-shadow: inset 187.4px 0 0 0 #60A5FA;
       color: #fff;
     }
 }
 
-.mobileCTAbtn {
-  box-shadow: inset 187.4px 0 0 0 #fff;
-  color: #60A5FA;
-}
+@media (hover: none) {
 
-.mobileWhiteToBlueBtn {
-    box-shadow: inset 187.4px 0 0 0 #60A5FA;
-    color: #fff;
-}
-
-/* @media (hover: none) {
-  .CTAbtn:visited {
-    box-shadow: inset 0 0 0 0 #fff;
+  .mobileCTAbtn {
+    box-shadow: inset 187.4px 0 0 0 #fff;
     color: #60A5FA;
   }
-  .CTAbtn:active {
-    box-shadow: inset 187.4px 0 0 0 #fff;
-    color: #fff;
-  }
-  .whiteToBlueBtn:visited span {
-    box-shadow: inset 0 0 0 0 #60A5FA;
-    color: #3B82F6;
-  }
-  .whiteToBlueBtn:active span {
-    box-shadow: inset 187.4px 0 0 0 #60A5FA;
-    color: #fff;
-  }
-} */
+
+  .mobileWhiteToBlueBtn {
+      box-shadow: inset 187.4px 0 0 0 #60A5FA;
+      color: #fff;
+  }         
+
+}
+
+.CTAbtn:active {
+  box-shadow: inset 187.4px 0 0 0 #fff;
+  color: #fff;
+}
+
+.whiteToBlueBtn:active span {
+  box-shadow: inset 187.4px 0 0 0 #60A5FA;
+  color: #fff;
+}
