@@ -8,7 +8,7 @@ const Hero = () => {
     const msgs = ['front-end', 'back-end', 'full-stack']
     const [isBeingTouched, setIsBeingTouched] = useState(false)
     const toggleTouched = input => {
-        setTimeout(() => setState(input), 200)
+        setTimeout(() => setIsBeingTouched(input), 200)
     }
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
