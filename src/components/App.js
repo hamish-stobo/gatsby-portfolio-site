@@ -8,10 +8,10 @@ import Projects from './Projects'
 import Hero from './Hero'
 
 const App = () => {
-  const [isTouchscreen, setIsTouchscreen] = useState(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))
-  // useEffect(() => {
-  //   setIsTouchscreen(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))
-  // }, [])
+  const [isTouchscreen, setIsTouchscreen] = useState(false)
+  useEffect(() => {
+    setIsTouchscreen(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))
+  }, [])
   return (
     <div className="mx-auto text-center w-full">
       <Helmet>
