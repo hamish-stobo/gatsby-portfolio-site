@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 
-const CTA = () => {
+const CTA = ({ isTouchscreen }) => {
     return (
         <section className="text-white flex flex-col justify-between align-center text-center bg-blue-400 pt-8 sm:pt-20 px-4 pb-24 CTAclippedRect">
             <Fade top duration={800} delay={10} distance="10px">
