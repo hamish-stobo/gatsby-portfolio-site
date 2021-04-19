@@ -3,7 +3,7 @@ import projectsData from './projectsData'
 import ProjectCard from './ProjectCard'
 import Fade from 'react-reveal/Fade'
 
-const Projects = () => {
+const Projects = ({ isTouchscreen }) => {
     return (
         <section>
             <Fade top duration={800} delay={150} distance="10px">
@@ -15,7 +15,7 @@ const Projects = () => {
                 {
                 projectsData.map(( project, idx ) => {
                     const key = idx + project.id
-                    return <ProjectCard key={key} project={ project } idx={idx} />
+                    return <ProjectCard isTouchscreen={ isTouchscreen } key={key} project={ project } idx={idx} />
                 })
                 }
             </div>
