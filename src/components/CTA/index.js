@@ -12,7 +12,7 @@ const CTA = () => {
                 <p className="mt-12 text-lg sm:text-xl">Click the button to send me an email. I'd love to hear from you!</p>
             </Fade>
             <Fade bottom duration={800} delay={180} distance="20px">
-                <a onTouchStart={() => setIsBeingTouched(true)} onTouchEnd={() => setIsBeingTouched(false)} onTouchMove={() => setIsBeingTouched(false)} onTouchCancel={() => setIsBeingTouched(false)} className={`mt-8 sm:mt-12 text-white mx-auto w-40 py-3 px-7 border-solid border-4 border-white cursor-pointer text-xl CTAbtn ${isBeingTouched ? 'mobileCTAbtn' : ''}`} href="mailto:hh.stobo@gmail.com" title="hh.stobo@gmail.com">Let's Talk</a>
+                <a onTouchStart={() => setIsBeingTouched(true)} onTouchEnd={() => setIsBeingTouched(false)} className={`mt-8 sm:mt-12 text-white mx-auto w-40 py-3 px-7 border-solid border-4 border-white cursor-pointer text-xl CTAbtn ${isBeingTouched ? 'mobileCTAbtn' : ''}`} href="mailto:hh.stobo@gmail.com" title="hh.stobo@gmail.com">Let's Talk</a>
             </Fade>
         </section>
     )
