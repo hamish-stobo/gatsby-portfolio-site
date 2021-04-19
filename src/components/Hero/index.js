@@ -6,10 +6,6 @@ import Fade from 'react-reveal/Fade'
 
 const Hero = () => {
     const msgs = ['front-end', 'back-end', 'full-stack']
-    const [isBeingTouched, setIsBeingTouched] = useState(false)
-    const toggleTouched = input => {
-        setTimeout(() => setIsBeingTouched(input), 200)
-    }
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
             <Fade top duration={800} distance="20px">
@@ -19,7 +15,7 @@ const Hero = () => {
                 </div>
             </Fade>
             <Fade bottom duration={800} delay={200} distance="30px">
-                <Link onTouchStart={() => toggleTouched(true)} to="about" smooth={true} duration={600} className={`text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer ${isBeingTouched ? 'mobileCTAbtn' : 'CTAbtn'}`}>Find out more</Link>
+                <Link to="about" smooth={true} duration={600} className="text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer CTAbtn">Find out more</Link>
             </Fade>
         </section>
     )

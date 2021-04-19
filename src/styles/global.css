@@ -59,7 +59,7 @@ html, body, * {
     }
 }
 
-/* @media (hover: none) {
+@media (hover: none) {
   .CTAbtn, .whiteToBlueBtn span {
     transition: none;
   }
@@ -83,7 +83,7 @@ html, body, * {
       box-shadow: inset 187.4px 0 0 0 #60A5FA;
       color: #fff;
   }
-} */
+}
 
 /* @media (hover: none) {
   .CTAbtn:visited {
