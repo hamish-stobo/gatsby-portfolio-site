@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Helmet } from "react-helmet"
 import ParticlesContainer from './ParticlesContainer'
 import About from './About'
@@ -8,6 +8,10 @@ import Projects from './Projects'
 import Hero from './Hero'
 
 const App = () => {
+  const [isTouchscreen, setIsTouchscreen] = useState(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))
+  // useEffect(() => {
+  //   setIsTouchscreen(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))
+  // }, [])
   return (
     <div className="mx-auto text-center w-full">
       <Helmet>
@@ -20,10 +24,10 @@ const App = () => {
       </Helmet>
       <ParticlesContainer />
       <div className="z-10 relative -top-full">
-        <Hero />
+        <Hero isTouchscreen={isTouchscreen} />
         <About />
-        <Projects />
-        <CTA />
+        <Projects isTouchscreen={isTouchscreen} />
+        <CTA isTouchscreen={isTouchscreen} />
         <Footer />
       </div>
     </div>
