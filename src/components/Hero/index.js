@@ -20,7 +20,7 @@ const Hero = ({ isTouchscreen }) => {
                 </div>
             </Fade>
             <Fade bottom duration={800} delay={200} distance="30px">
-                <Link onTouchStart={() => touchEffect} to="about" smooth={true} duration={600} className={`text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer ${!isTouchscreen ? 'CTAbtn' : touchClass}`}>Find out more</Link>
+                <Link onTouchStart={() => touchEffect()} to="about" smooth={true} duration={600} className={`text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer ${!isTouchscreen ? 'CTAbtn' : touchClass}`}>Find out more</Link>
             </Fade>
         </section>
     )
