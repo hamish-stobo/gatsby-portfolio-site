@@ -7,10 +7,6 @@ import Fade from 'react-reveal/Fade'
 const Hero = ({ isTouchscreen }) => {
     const msgs = ['front-end', 'back-end', 'full-stack']
     const [touchClass, setTouchClass] = useState('mobileCTAinitial')
-    const touchEffect = () => {
-        setTouchClass('mobileCTAactive')
-        setTimeout(() => setTouchClass('mobileCTAinitial'), 300)
-    }
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
             <Fade top duration={800} distance="20px">
@@ -20,7 +16,7 @@ const Hero = ({ isTouchscreen }) => {
                 </div>
             </Fade>
             <Fade bottom duration={800} delay={200} distance="30px">
-                <Link onTouchStart={() => touchEffect()} to="about" smooth={true} duration={600} className={`text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer ${!isTouchscreen ? 'CTAbtn' : touchClass}`}>Find out more</Link>
+                <Link to="about" smooth={true} duration={600} className={`text-white text-xl py-3 px-7 border-solid border-4 border-white cursor-pointer ${!isTouchscreen ? 'CTAbtn' : ''}`}>Find out more</Link>
             </Fade>
         </section>
     )
