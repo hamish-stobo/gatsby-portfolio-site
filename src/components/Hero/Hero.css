@@ -8,12 +8,12 @@
 
 @media screen and (min-width: 640px) {
   .typewriterText {
-    width: 140px;
+    width: 145px;
   }
 }
 
 #cursor {
-  border-left: 2px solid rgba(0,0,0,0);
+  border-left: .1em solid rgba(0,0,0,0);
   animation: blink .7s steps(1) 12;
 }
 
