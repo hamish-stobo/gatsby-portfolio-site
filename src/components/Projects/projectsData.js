@@ -34,6 +34,15 @@ const projectsData = [
       info2: 'This website is built on the front-end framework VueJS.',
       url: 'https://www.craigstobo.com/',
       repo: 'https://github.com/hamish-stobo/craig-portfolio-website', // if no repo, the button will not show up
+    },
+    {
+      id: Math.round(Math.random() * 100),
+      img: 'snakeGame.png',
+      title: 'Classic Snake Game',
+      info: 'This is the classic snake game, built to explore game development.',
+      info2: 'This is a static website built using vanilla JavaScript.',
+      url: 'https://trusting-visvesvaraya-36671d.netlify.app/',
+      repo: 'https://github.com/hamish-stobo/snake', // if no repo, the button will not show up
     }
   ]
 export default projectsData
