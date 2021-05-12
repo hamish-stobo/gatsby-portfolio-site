@@ -14,8 +14,8 @@ const Projects = ({ isTouchscreen }) => {
             <div className="sm:pt-4 pb-8 md:pb-16">
                 {
                 projectsData.map(( project, idx ) => {
-                    const key = idx + project.id
-                    return <ProjectCard isTouchscreen={ isTouchscreen } key={key} project={ project } idx={idx} />
+                    const key = project.id
+                    return <ProjectCard isTouchscreen={ isTouchscreen } key={key} project={ project } idx={ idx } />
                 })
                 }
             </div>

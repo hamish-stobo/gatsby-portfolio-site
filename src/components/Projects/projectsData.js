@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid'
+
 const projectsData = [
     {
-      id: Math.round(Math.random() * 100),
+      id: uuidv4(),
       img: 'roomieLandingPage.png',
       title: 'rOOmie',
       info: 'This app was built to make finding a flat or advertising for a spare room in a flat a seamless, easy process. The app provides an instagram-like experience for users to see listed adverts, and have a profile page where they can list their contact info.',
@@ -9,7 +11,7 @@ const projectsData = [
       repo: 'https://github.com/hamish-stobo/roomie', // if no repo, the button will not show up
     },
     {
-      id: Math.round(Math.random() * 100),
+      id: uuidv4(),
       img: 'helpingHands.png',
       title: 'Helping Hands',
       info: 'This app was built as part of Hack the Crisis: New Zealand (hackathon). It is a platform that connects volunteers with at-risk community members, so that they can have groceries or vital medicine delivered.',
@@ -18,7 +20,7 @@ const projectsData = [
       repo: 'https://github.com/hamish-stobo/helping-hands', // if no repo, the button will not show up
     },
     {
-      id: Math.round(Math.random() * 100),
+      id: uuidv4(),
       img: 'WalkLand.png',
       title: 'WalkLand',
       info: 'This app offers Aucklander’s the opportunity to explore their own backyard. the opportunity the beauty that Auckland has to provide. Users can sign up, view hikes around Auckland on a map, and leave ratings & reviews on hikes they have completed.',
@@ -27,7 +29,7 @@ const projectsData = [
       repo: 'https://github.com/hamish-stobo/WalkLand', // if no repo, the button will not show up
     },
     {
-      id: Math.round(Math.random() * 100),
+      id: uuidv4(),
       img: 'craigPortfolio.png',
       title: 'Client Portolio Site',
       info: 'This is a static portfolio website, built as to showcase this person\'s Curriculum Vitae.',
@@ -36,7 +38,7 @@ const projectsData = [
       repo: 'https://github.com/hamish-stobo/craig-portfolio-website', // if no repo, the button will not show up
     },
     {
-      id: Math.round(Math.random() * 100),
+      id: uuidv4(),
       img: 'snakeGame.png',
       title: 'Classic Snake Game',
       info: 'This is the classic snake game, built to explore game development.',
