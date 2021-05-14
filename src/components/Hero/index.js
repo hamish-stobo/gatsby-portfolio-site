@@ -12,7 +12,7 @@ const Hero = ({ isTouchscreen }) => {
             <Fade top duration={800} distance="20px">
                 <div className="text-lg text-white sm:text-2xl heroText">
                     <p>Hello there! I’m<span className="font-semibold"> Hamish</span>.</p>
-                    <p>I’m a <TypeWriter messages={msgs} /> web developer.</p>
+                    <p className="mt-2 max-w-sm sm:max-w-lg">I’m a ServiceNow Consultant and <TypeWriter messages={msgs} /> web developer.</p>
                 </div>
             </Fade>
             <Fade bottom duration={800} delay={200} distance="30px">
