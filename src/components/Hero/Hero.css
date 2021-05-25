@@ -3,18 +3,18 @@
 }
 
 .typewriterText {
-  width: 110px;
+  width: 100px;
 }
 
 @media screen and (min-width: 640px) {
   .typewriterText {
-    width: 150px;
+    width: 130px;
   }
 }
 
 #cursor {
   border-left: .1em solid rgba(0,0,0,0);
-  animation: blink .7s steps(1) 12;
+  animation: blink .7s steps(1) 6;
 }
 
 @keyframes blink {

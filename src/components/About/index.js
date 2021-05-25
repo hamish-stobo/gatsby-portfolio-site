@@ -13,7 +13,7 @@ const About = () => {
                     <Fade right duration={800} delay={250} distance="30px">
                         <div className="flex flex-col justify-around items-center sm:ml-4">
                             <h2 className="text-3xl pt-4 sm:pt-0">About Me</h2>
-                            <p className="text-sm md:text-base pt-4">I'm a ServiceNow Consultant and web developer. When I'm not coding, you can find me playing <span className="whitespace-nowrap">piano &#x1f3b9;,</span> out <span className="whitespace-nowrap">running &#x1F3C3;</span> or eating <span className="whitespace-nowrap">ramen 🍜.</span></p>
+                            <p className="text-sm md:text-base pt-4">I'm a ServiceNow Consultant and software developer. When I'm not coding, you can find me playing <span className="whitespace-nowrap">piano &#x1f3b9;,</span> out <span className="whitespace-nowrap">running &#x1F3C3;</span> or eating <span className="whitespace-nowrap">ramen 🍜.</span></p>
                             <p className="text-sm md:text-base pt-4">Tools I use include Figma and ReactJS for crafting delightful user interfaces, Node.js and Express for developing RESTful APIs, and a SQL RDBMS such as PostgreSQL for provisioning databases.</p>
                         </div>
                     </Fade>

@@ -28,7 +28,7 @@ const TypeWriter = ({ messages }) => {
   }, [state.isDeleting])
 
   useEffect(() => {
-    if (!state.isDeleting && state.text === state.message && state.text !== 'full-stack') {
+    if (!state.isDeleting && state.text === state.message && state.text !== 'front-end') {
       setTimeout(() => {
         setState(cs => ({
           ...cs,
@@ -45,11 +45,7 @@ const TypeWriter = ({ messages }) => {
     }
   }, [state.text, state.message, state.isDeleting, messages])
 
-  const getCurrentText = currentState => {
-    return currentState.isDeleting
-      ? currentState.message.substring(0, currentState.text.length - 1)
-      : currentState.message.substring(0, currentState.text.length + 1)
-  }
+  const getCurrentText = currentState => currentState.message.substring(0, currentState.text.length + 1)
 
   const getMessage = (currentState, data) => {
     return data[Number(currentState.loopNum) % Number(data.length)]
@@ -63,8 +59,9 @@ const TypeWriter = ({ messages }) => {
 
   return (
     <div className="typewriterText inline-block">
-        <span className="inline-block">{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span>
+        <span className="inline-block">{state.text}</span>
         <span id="cursor" />
+        {/* <span className="inline-block">{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span> */}
     </div>
   )
 }
