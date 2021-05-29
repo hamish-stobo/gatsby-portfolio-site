@@ -39,10 +39,19 @@ const projectsData = [
     },
     {
       id: uuidv4(),
+      img: 'TypeScriptTodo.png',
+      title: 'Todo List App',
+      info: 'This is the classic \'Hello World\' of web apps, built to learn TypeScript. Add, edit and remove todo items.',
+      info2: 'By using local storage, the list of todos persists when the browser is refreshed.',
+      url: 'https://unruffled-allen-dedad1.netlify.app',
+      repo: 'https://github.com/hamish-stobo/typescript-todo-app', // if no repo, the button will not show up
+    },
+    {
+      id: uuidv4(),
       img: 'snakeGame.png',
       title: 'Classic Snake Game',
       info: 'This is the classic snake game, built to explore game development.',
-      info2: 'This is a static website built using vanilla JavaScript.',
+      info2: 'It\'s built with vanilla javascript and is a static website.',
       url: 'https://trusting-visvesvaraya-36671d.netlify.app/',
       repo: 'https://github.com/hamish-stobo/snake', // if no repo, the button will not show up
     }
