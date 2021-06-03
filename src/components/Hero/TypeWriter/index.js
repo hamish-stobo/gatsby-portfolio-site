@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 const TypeWriter = ({ messages }) => {
   const CONSTANTS = {
-    DELETING_SPEED: 30,
-    TYPING_SPEED: 160,
+    DELETING_SPEED: 60,
+    TYPING_SPEED: 100,
   }
   const [state, setState] = useState({
     text: "",
@@ -25,10 +25,10 @@ const TypeWriter = ({ messages }) => {
     }
     handleType()
     return () => clearTimeout(timer)
-  }, [state.isDeleting])
+  }, [state.isDeleting, state.typingSpeed])
 
   useEffect(() => {
-    if (!state.isDeleting && state.text === state.message && state.text !== 'front-end') {
+    if (!state.isDeleting && state.text === state.message && state.text !== 'full-stack') {
       setTimeout(() => {
         setState(cs => ({
           ...cs,
@@ -45,7 +45,11 @@ const TypeWriter = ({ messages }) => {
     }
   }, [state.text, state.message, state.isDeleting, messages])
 
-  const getCurrentText = currentState => currentState.message.substring(0, currentState.text.length + 1)
+  const getCurrentText = currentState => {
+    return currentState.isDeleting
+      ? currentState.message.substring(0, currentState.text.length - 1)
+      : currentState.message.substring(0, currentState.text.length + 1)
+  }
 
   const getMessage = (currentState, data) => {
     return data[Number(currentState.loopNum) % Number(data.length)]
@@ -53,15 +57,15 @@ const TypeWriter = ({ messages }) => {
 
   const getTypingSpeed = (currentState) => {
     return currentState.isDeleting
-      ? CONSTANTS.TYPING_SPEED
-      : CONSTANTS.DELETING_SPEED
+      ? CONSTANTS.DELETING_SPEED
+      : CONSTANTS.TYPING_SPEED
   }
 
   return (
     <div className="typewriterText inline-block">
-        <span className="inline-block">{state.text}</span>
+        {/* <span className="inline-block">{state.text}</span> */}
+        <span className="inline-block">{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span>
         <span id="cursor" />
-        {/* <span className="inline-block">{state.text.indexOf('fu') === 0 ? <b>{state.text}</b> : state.text}</span> */}
     </div>
   )
 }

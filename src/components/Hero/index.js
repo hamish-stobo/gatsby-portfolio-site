@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
 
 const Hero = ({ isTouchscreen }) => {
-    const msgs = ['front-end']
+    const msgs = ['front-end', 'back-end', 'full-stack']
     const [touchClass, setTouchClass] = useState('mobileCTAinitial')
     return (
         <section className="h-screen flex flex-col justify-evenly items-center">
