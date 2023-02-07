@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade'
 import ProjectImg from '../ProjectImg'
 
 const ProjectCard = (props) => {
-    const { project, idx, isTouchscreen } = props
+    const { project, idx } = props
     const { img, title, info, info2, url, repo } = project
     //use idx % 2 to reverse direction of every second project card
     const isEven = idx % 2 === 0
@@ -22,10 +22,10 @@ const ProjectCard = (props) => {
                 <div className={`flex flex-col justify-evenly items-center w-11/12 md:w-3/6 md:justify-between md:h-full ${marginDirectionImage}`}>
                     <ProjectImg  filename={img} />
                     <div className="flex flex-row justify-evenly items-center w-full pt-8 text-lg sm:text-xl">
-                        <a className={`border-solid border-4 border-blue-400 ${!isTouchscreen ? 'whiteToBlueBtn' : ''}`} href={url} target="_blank" rel="noreferrer">
+                        <button onClick="goToUrl" className={`button btn-blue-500`} rel="noreferrer">
                             <span className="text-blue-500 inline-block w-full h-full py-2 px-6 sm:py-3 sm:px-7 ">See Live</span>
-                        </a>
-                        <a className="text-blue-500" href={repo} target="_blank" rel="noreferrer">Source Code</a>
+                        </button>
+                        <button onClick="goToUrl" className="text-blue-500" rel="noreferrer">Source Code</button>
                     </div>
                 </div>
             </Fade>

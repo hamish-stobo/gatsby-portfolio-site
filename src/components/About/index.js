@@ -8,7 +8,7 @@ const About = () => {
             <Fade bottom duration={800} delay={100} distance="10px">
                 <div className="p-8 sm:py-12 rounded-sm bg-white shadow-lg max-w-md sm:max-w-screen-md mx-auto flex flex-col sm:flex-row justify-center sm:justify-between items-center">
                     <Fade left duration={800} delay={200} distance="30px">
-                        <StaticImage src='../../images/profile.png' alt="Website author" placeholder="blurred" layout="fullWidth" className="w-60 shadow-md sm:mr-4"/>
+                        <StaticImage src='../../images/profile-old.png' alt="Website author" placeholder="blurred" layout="fullWidth" className="w-60 shadow-md sm:mr-4"/>
                     </Fade>
                     <Fade right duration={800} delay={250} distance="30px">
                         <div className="flex flex-col justify-around items-center sm:ml-4">
