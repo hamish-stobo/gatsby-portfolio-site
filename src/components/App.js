@@ -26,7 +26,7 @@ const App = () => {
       <div className="z-10 relative -top-full">
         <Hero isTouchscreen={isTouchscreen} />
         <About />
-        <Projects isTouchscreen={isTouchscreen} />
+        <Projects />
         <CTA isTouchscreen={isTouchscreen} />
         <Footer />
       </div>
