@@ -5,7 +5,7 @@ const projectsData = [
       id: uuidv4(),
       img: 'SafeStack.png',
       title: 'SafeStack',
-      info: 'SafeStack is an online platform that provides cybersecurity training for organisations and individuals.',
+      info: 'SafeStack is an e-learning platform that provides cybersecurity training for organisations and individuals.',
       info2: 'I am responsible for developing the front-end built on Nuxt JS and Tailwind CSS, the GraphQL API, the GoLang backend, and the PostgreSQL database.',
       infoButton: {
         label: 'More Info',
