@@ -8,7 +8,7 @@ const Projects = () => {
         <section>
             <Fade top duration={800} delay={150} distance="10px">
                 <div className="text-3xl pt-8 h-24">
-                    Project Showcase
+                    My Work
                 </div>
             </Fade>
             <div className="sm:pt-4 pb-8 md:pb-16">
