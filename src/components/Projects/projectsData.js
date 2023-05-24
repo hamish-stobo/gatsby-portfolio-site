@@ -31,8 +31,8 @@ const projectsData = [
       },
       liveButton: {
         label: 'See Live',
-        url: 'http://r00mie.herokuapp.com',
-        disabled: true
+        url: 'https://roomie-production.up.railway.app',
+        disabled: false
       },
     },
     {
